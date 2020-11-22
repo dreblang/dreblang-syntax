@@ -1,0 +1,25 @@
+{
+    "name": "dreblang-syntax",
+    "displayName": "dreblang-syntax",
+    "description": "Syntax highlight for dreblang.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dreb",
+            "aliases": ["Dreblang", "dreb"],
+            "extensions": [".dreb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dreb",
+            "scopeName": "source.dreb",
+            "path": "./syntaxes/dreb.tmLanguage.json"
+        }]
+    }
+}

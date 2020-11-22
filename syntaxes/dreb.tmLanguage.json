@@ -1,0 +1,48 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Dreblang",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#strings2"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.dreb",
+					"match": "\\b(fn|let|true|false|if|else|return|loop|scope|export|load)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.dreb",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.dreb",
+					"match": "\\\\."
+				}
+			]
+		},
+		"strings2": {
+			"name": "string.quoted.single.dreb",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.dreb",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.dreb"
+}
