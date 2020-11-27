@@ -17,7 +17,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.dreb",
-					"match": "\\b(fn|let|true|false|if|else|return|loop|scope|export|load)\\b"
+					"match": "\\b(fn|let|true|false|if|else|return|loop|scope|export|load|iter|over)\\b"
 				}
 			]
 		},
