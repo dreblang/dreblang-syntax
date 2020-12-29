@@ -17,7 +17,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.dreb",
-					"match": "\\b(fn|let|true|false|if|else|return|loop|scope|export|load|iter|over)\\b"
+					"match": "\\b(fn|let|true|false|if|else|return|loop|scope|export|load|iter|over|class)\\b"
+				},
+				{
+					"name": "keyword.builtins.dreb",
+					"match": "\\b(len|print|int|float|string|bytes)\\b"
 				}
 			]
 		},
