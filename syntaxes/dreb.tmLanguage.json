@@ -10,6 +10,9 @@
 		},
 		{
 			"include": "#strings2"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -44,6 +47,15 @@
 				{
 					"name": "constant.character.escape.dreb",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash.dreb",
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.dreb",
+					"match": "\\/\\/.*\\n?"
 				}
 			]
 		}
